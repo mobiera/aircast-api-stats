@@ -16,27 +16,29 @@ public enum DidcommServiceStat implements StatEnum {
 	SENT_MSG_VIEWED(33, "Sent Message Viewed", true),
 	SENT_MSG_BCAST(34, "Sent Message Broadcast", true),
 	
-	SENT_MSG_VC(40, "Sent Message Broadcast", true),
-	SENT_MSG_PR(41, "Sent Message Presentation Request", true),
-	SENT_MSG_TEXT(42, "Sent Message Presentation Request", true),
-	SENT_MSG_WEB_LINK(43, "Sent Message Presentation Request", true),
-	SENT_MSG_INVITATION(44, "Sent Message Presentation Request", true),
-	SENT_MSG_ROOT_MENU(45, "Sent Message Presentation Request", true),
-	SENT_MSG_SELECT_MENU(46, "Sent Message Presentation Request", true),
-	SENT_MSG_MEDIA(47, "Sent Message Presentation Request", true),
+	SENT_MSG_ERROR(35, "Sent Message Error", true),
+	
+	
+	SENT_MSG_VC(40, "Sent Broadcast", true),
+	SENT_MSG_PR(41, "Sent Presentation Request", true),
+	SENT_MSG_TEXT(42, "Sent Text", true),
+	SENT_MSG_WEB_LINK(43, "Sent Web Link", true),
+	SENT_MSG_INVITATION(44, "Sent Invitation", true),
+	SENT_MSG_ROOT_MENU(45, "Sent Root Menu", true),
+	SENT_MSG_SELECT_MENU(46, "Sent Select Menu", true),
+	SENT_MSG_MEDIA(47, "Sent Media", true),
 	
 	
 	
 	RECEIVED_MSG(70, "Received Message", true),
 	
-	RECEIVED_MSG_IP_CRED(71, "Sent Message Broadcast", true),
-	RECEIVED_MSG_IP_NO_CRED(72, "Sent Message Broadcast", true),
-	RECEIVED_MSG_TEXT(73, "Sent Message Presentation Request", true),
-	RECEIVED_MSG_WEB_LINK(74, "Sent Message Presentation Request", true),
-	RECEIVED_MSG_INVITATION(75, "Sent Message Presentation Request", true),
-	RECEIVED_MSG_ROOT_MENU(76, "Sent Message Presentation Request", true),
-	RECEIVED_MSG_SELECT_MENU(77, "Sent Message Presentation Request", true),
-	RECEIVED_MSG_MEDIA(78, "Sent Message Presentation Request", true),
+	RECEIVED_MSG_IP_CRED(71, "Received Proof with Cred", true),
+	RECEIVED_MSG_IP_NO_CRED(72, "Received Proof no Cred", true),
+	RECEIVED_MSG_TEXT(73, "Received Text", true),
+	RECEIVED_MSG_WEB_LINK(74, "Received Web Link", true),
+	RECEIVED_MSG_INVITATION(75, "Received Invitation", true),
+	RECEIVED_MSG_SELECT_MENU_ANSWER(77, "Received Select Menu Answer", true),
+	RECEIVED_MSG_MEDIA(78, "Received Media", true),
 	
 	
 	
@@ -67,10 +69,12 @@ public enum DidcommServiceStat implements StatEnum {
 			case -1: return DATE_TS;
 			case 1: return ESTABLISHED_CONNECTION;
 			case 2: return TERMINATED_CONNECTION;
+			case 30: return SENT_MSG;
 			case 31: return SENT_MSG_SPOOLED;
 			case 32: return SENT_MSG_RECEIVED;
 			case 33: return SENT_MSG_VIEWED;
 			case 34: return SENT_MSG_BCAST;
+			case 35: return SENT_MSG_ERROR;
 			case 40: return SENT_MSG_VC;
 			case 41: return SENT_MSG_PR;
 			case 42: return SENT_MSG_TEXT;
@@ -85,8 +89,7 @@ public enum DidcommServiceStat implements StatEnum {
 			case 73: return RECEIVED_MSG_TEXT;
 			case 74: return RECEIVED_MSG_WEB_LINK;
 			case 75: return RECEIVED_MSG_INVITATION;
-			case 76: return RECEIVED_MSG_ROOT_MENU;
-			case 77: return RECEIVED_MSG_SELECT_MENU;
+			case 77: return RECEIVED_MSG_SELECT_MENU_ANSWER;
 			case 78: return RECEIVED_MSG_MEDIA;
 			
 			
