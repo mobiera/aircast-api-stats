@@ -19,7 +19,8 @@ public enum AircastStatClass implements StatClass {
 	IDENTIFIER(12,IdentifierStat.class.getSimpleName(), "Identifier"),
 	LANDING(13,LandingStat.class.getSimpleName(), "Landing"),
 	DIDCOMM_SERVICE(15,DidcommServiceStat.class.getSimpleName(), "Didcomm Service"),
-	CAMPAIGN_GROUP(16,CampaignGroupStat.class.getSimpleName(), "Campaign Group");
+	CAMPAIGN_GROUP(16,CampaignGroupStat.class.getSimpleName(), "Campaign Group"),
+	CAMPAIGN_USER(16,CampaignUserStat.class.getSimpleName(), "Campaign User");
 	
 	
 	
