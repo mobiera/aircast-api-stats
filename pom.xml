@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.mobiera.libs</groupId>
    <artifactId>aircast-api-stats</artifactId>
-   <version>1.1</version>
+   <version>1.2</version>
    <name>Aircast API Stats</name>
    <description>Stat KPIs for Mobiera Aircast Containers</description>
    <url>https://github.com/mobiera/aircast-api-stats</url>
