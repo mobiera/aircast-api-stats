@@ -45,7 +45,10 @@ public enum CampaignStat implements StatEnum {
 	CANCEL_2(37, "Cancel 2",  true),
 	BACK_2(38, "Back 2",  true),
 	TIMEOUT_2(39, "Timeout 2",  true),
-	ERROR_2(40, "Error 2",  false);
+	ERROR_2(40, "Error 2",  false),
+	BLOCKED_BY_POLICY(41, "Blocked by Policy",  true),
+	
+	;
 	
 	
 	
@@ -127,7 +130,7 @@ public enum CampaignStat implements StatEnum {
 			case 38: return BACK_2;
 			case 39: return TIMEOUT_2;
 			case 40: return ERROR_2;
-			
+			case 41: return BLOCKED_BY_POLICY;
 			
 			default: return null;
 		}
