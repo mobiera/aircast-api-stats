@@ -46,7 +46,8 @@ public enum CampaignStat implements StatEnum {
 	BACK_2(38, "Back 2",  true),
 	TIMEOUT_2(39, "Timeout 2",  true),
 	ERROR_2(40, "Error 2",  false),
-	BLOCKED_BY_POLICY(41, "Blocked by Policy",  true),
+	BLOCKED_BY_POLICY(41, "Blocked (Plcy)",  true),
+	BLOCKED_BY_BROWSER(42, "Blocked (Bwsr)", true),
 	
 	;
 	
