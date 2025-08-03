@@ -18,7 +18,11 @@ public enum AdStat implements StatEnum {
 	TIMEOUT_2(10, "Timeout 2", "Timeout 2", true),
 	ERROR_2(11, "Error 2", "Error 2", false),
 	SENT(12, "Sent", "Sent", false),
-	DLRED(13, "Dlred", "Dlred", false);
+	DLRED(13, "Dlred", "Dlred", false),
+	PROCESSED(14, "Processed", "Processed", false),
+	BLOCKED_BY_POLICY(41, "Blocked (Plcy)", "Blocked (Plcy)",  false),
+	BLOCKED_BY_BROWSER(42, "Blocked (Bwsr)", "Blocked (Pol)",  false),
+	;
 	
 	
 	private Boolean showByDefault;
