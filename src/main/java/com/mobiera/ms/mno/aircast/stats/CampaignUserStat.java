@@ -48,7 +48,8 @@ public enum CampaignUserStat implements StatEnum {
 	ERROR_2(40, "Error 2",  false),
 	BLOCKED_BY_POLICY(41, "Blocked (Plcy)",  true),
 	BLOCKED_BY_BROWSER(42, "Blocked (Bwsr)", true),
-	;
+	BLOCKED_BY_ATTRIBUTES(43, "Blocked (Attr)", true),
+;
 	
 	
 	private Boolean showByDefault;
@@ -129,6 +130,9 @@ public enum CampaignUserStat implements StatEnum {
 			case 38: return BACK_2;
 			case 39: return TIMEOUT_2;
 			case 40: return ERROR_2;
+			case 41: return BLOCKED_BY_POLICY;
+			case 42: return BLOCKED_BY_BROWSER;
+			case 43: return BLOCKED_BY_ATTRIBUTES;
 			
 			
 			default: return null;

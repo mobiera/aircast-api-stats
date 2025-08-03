@@ -22,6 +22,8 @@ public enum AdStat implements StatEnum {
 	PROCESSED(14, "Processed", "Processed", false),
 	BLOCKED_BY_POLICY(41, "Blocked (Plcy)", "Blocked (Plcy)",  false),
 	BLOCKED_BY_BROWSER(42, "Blocked (Bwsr)", "Blocked (Pol)",  false),
+	BLOCKED_BY_ATTRIBUTES(43, "Blocked (Attr)", "Blocked (Attr)", false),
+
 	;
 	
 	
@@ -81,6 +83,9 @@ public enum AdStat implements StatEnum {
 			case 11: return ERROR_2;
 			case 12: return SENT	;
 			case 13: return DLRED;
+			case 41: return BLOCKED_BY_POLICY;
+			case 42: return BLOCKED_BY_BROWSER;
+			case 43: return BLOCKED_BY_ATTRIBUTES;
 			
 			default: return null;
 		}
