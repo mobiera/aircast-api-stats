@@ -3,7 +3,7 @@
    <modelVersion>4.0.0</modelVersion>
    <groupId>com.mobiera.libs</groupId>
    <artifactId>aircast-api-stats</artifactId>
-   <version>1.6</version>
+   <version>1.7</version>
    <name>Aircast API Stats</name>
    <description>Stat KPIs for Mobiera Aircast Containers</description>
    <url>https://github.com/mobiera/aircast-api-stats</url>
@@ -32,13 +32,18 @@
       <maven.compiler.target>11</maven.compiler.target>
    </properties>
    <dependencies>
-      <dependency>
+   <dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>[4.13.1,)</version>
+</dependency>
+      <!-- <dependency>
          <groupId>junit</groupId>
          <artifactId>junit</artifactId>
          <version>4.11</version>
          <scope>test</scope>
       </dependency>
-      <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
+      https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-annotations -->
       
       <dependency>
          <groupId>org.jboss.logging</groupId>
