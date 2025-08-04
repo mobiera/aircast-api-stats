@@ -83,6 +83,7 @@ public enum AdStat implements StatEnum {
 			case 11: return ERROR_2;
 			case 12: return SENT	;
 			case 13: return DLRED;
+			case 40: return PROCESSED;
 			case 41: return BLOCKED_BY_POLICY;
 			case 42: return BLOCKED_BY_BROWSER;
 			case 43: return BLOCKED_BY_ATTRIBUTES;
