@@ -50,6 +50,27 @@ public enum CampaignStat implements StatEnum {
 	BLOCKED_BY_BROWSER(42, "Blocked (Bwsr)", true),
 	BLOCKED_BY_ATTRIBUTES(43, "Blocked (Attr)", true),
 
+	// RAM campaigns: kind of failure of a session. The counters of the proof of receipt follow
+	// the response status codes of ETSI TS 102 225. Indexes are slots of the stats store (0 to
+	// 99) and are never reused nor renumbered.
+	RAM_FAILED_PERMANENT(44, "Ram Permanent Failure", true),
+	RAM_FAILED_EXHAUSTED(45, "Ram Attempts Exhausted", true),
+	RAM_POR_RC_CC_DS_FAILED(46, "Ram PoR RC/CC/DS Failed", true),
+	RAM_POR_CNTR_LOW(47, "Ram PoR Counter Low", true),
+	RAM_POR_CNTR_HIGH(48, "Ram PoR Counter High", true),
+	RAM_POR_CNTR_BLOCKED(49, "Ram PoR Counter Blocked", true),
+	RAM_POR_CIPHERING_ERROR(50, "Ram PoR Ciphering Error", true),
+	RAM_POR_UNIDENTIFIED_SECURITY_ERROR(51, "Ram PoR Security Error", true),
+	RAM_POR_INSUFFICIENT_MEMORY(52, "Ram PoR Insufficient Memory", true),
+	RAM_POR_MORE_TIME(53, "Ram PoR More Time", true),
+	RAM_POR_TAR_UNKNOWN(54, "Ram PoR TAR Unknown", true),
+	RAM_POR_INSUFFICIENT_SECURITY_LEVEL(55, "Ram PoR Insufficient Security Level", true),
+	RAM_POR_OTHER(56, "Ram PoR Other Refusal", true),
+	RAM_STATUS_WORD_ERROR(57, "Ram Command Refused", true),
+	RAM_UNDELIVERED(58, "Ram Undelivered", true),
+	RAM_UNDECODABLE(59, "Ram Undecodable Answer", true),
+	RAM_NOT_RUNNABLE(60, "Ram Not Runnable", true),
+
 	;
 	
 	
@@ -135,6 +156,23 @@ public enum CampaignStat implements StatEnum {
 			case 41: return BLOCKED_BY_POLICY;
 			case 42: return BLOCKED_BY_BROWSER;
 			case 43: return BLOCKED_BY_ATTRIBUTES;
+			case 44: return RAM_FAILED_PERMANENT;
+			case 45: return RAM_FAILED_EXHAUSTED;
+			case 46: return RAM_POR_RC_CC_DS_FAILED;
+			case 47: return RAM_POR_CNTR_LOW;
+			case 48: return RAM_POR_CNTR_HIGH;
+			case 49: return RAM_POR_CNTR_BLOCKED;
+			case 50: return RAM_POR_CIPHERING_ERROR;
+			case 51: return RAM_POR_UNIDENTIFIED_SECURITY_ERROR;
+			case 52: return RAM_POR_INSUFFICIENT_MEMORY;
+			case 53: return RAM_POR_MORE_TIME;
+			case 54: return RAM_POR_TAR_UNKNOWN;
+			case 55: return RAM_POR_INSUFFICIENT_SECURITY_LEVEL;
+			case 56: return RAM_POR_OTHER;
+			case 57: return RAM_STATUS_WORD_ERROR;
+			case 58: return RAM_UNDELIVERED;
+			case 59: return RAM_UNDECODABLE;
+			case 60: return RAM_NOT_RUNNABLE;
 			
 			
 
