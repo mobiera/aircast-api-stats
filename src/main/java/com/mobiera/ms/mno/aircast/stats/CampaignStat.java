@@ -70,6 +70,8 @@ public enum CampaignStat implements StatEnum {
 	RAM_UNDELIVERED(58, "Ram Undelivered", true),
 	RAM_UNDECODABLE(59, "Ram Undecodable Answer", true),
 	RAM_NOT_RUNNABLE(60, "Ram Not Runnable", true),
+	/** security probe: a candidate OTA configuration was accepted by the card **/
+	RAM_SECURITY_FOUND(61, "Ram Security Found", true),
 
 	;
 	
@@ -173,6 +175,7 @@ public enum CampaignStat implements StatEnum {
 			case 58: return RAM_UNDELIVERED;
 			case 59: return RAM_UNDECODABLE;
 			case 60: return RAM_NOT_RUNNABLE;
+			case 61: return RAM_SECURITY_FOUND;
 			
 			
 
